@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
+import 'normalize.css'
 import './App.css';
 import Banner from './Banner/Banner';
 import Results from './Results/Results';
-
-const key = "AIzaSyAOzZQI621AN5ELHfkPVLAvw1JRxg4CQ5w";
-
-
-//stretch goals: all the authors
-
-
 
 class App extends Component {
   constructor(props) {
@@ -93,7 +87,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {console.log(this.state)}
         <Banner APIcall={this.APIcall}></Banner>
         
         <Results stateData={this.state.bookInfo}></Results>       

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Book from './Book/Book';
+import './Results.css';
 
 export default class Results extends Component {
     render() {
