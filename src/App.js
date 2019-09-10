@@ -88,7 +88,7 @@ class App extends Component {
     return (
       <div className="App">
         <Banner APIcall={this.APIcall}></Banner>
-        
+        {console.log(this.state)}
         <Results stateData={this.state.bookInfo}></Results>       
       </div>
     );
