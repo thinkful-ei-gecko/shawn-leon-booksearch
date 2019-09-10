@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './FilterBar.css';
 
 export default class FilterBar extends Component {
   handleSubmit(e) {
@@ -9,11 +10,12 @@ export default class FilterBar extends Component {
     return (
       <div>
           <form id="bookSearchForm" onSubmit={(e) => this.handleSubmit(e)}>
-            <div>
+            <div id="search">
               <label htmlFor="search"></label>
               <input type="text" id="search" name="search" required></input>
               <button type="submit" value="search">Submit</button>
           </div>
+          <div id="filter">
           <div className="print-type">
             <label htmlFor="print-type">Print Type:</label>
             <select id="printtype" name="printtype">
@@ -32,6 +34,7 @@ export default class FilterBar extends Component {
               <option value="paid-ebooks">paid-ebooks</option>
               <option value="partial">partial</option>
             </select>
+          </div>
           </div>
         </form>
       </div>

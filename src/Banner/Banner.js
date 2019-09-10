@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import FilterBar from './FilterBar/FilterBar';
+import './Banner.css';
+
 
 export default class Banner extends Component {
     render() {

@@ -54,9 +54,10 @@ class App extends Component {
         if (book.searchInfo) { currentBook.description = book.searchInfo.textSnippet; }
         else { currentBook.description = 'no description'; }
       }
-      else { currentBook.description = 'no description';}
+      else { currentBook.description = 'no description'; }
       updatedState.push(currentBook);
     })
+    
     let newStateObject = {
       bookInfo : updatedState
     }

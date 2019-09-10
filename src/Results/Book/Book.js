@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import './Book.css';
 
 export default class Book extends Component {
 
     render() {
         return (
-            <div key={this.props.i}>
+            <div id="book" key={this.props.i}>
                 <div className="left-side">
                 <img src={this.props.bookData.picture} alt="book cover"/>
 
@@ -14,7 +15,7 @@ export default class Book extends Component {
                 <h2>{this.props.bookData.title}</h2>
                 <p>Author: {this.props.bookData.author}</p>
                 <p>Price: {this.props.bookData.price}</p>
-                <p>{this.props.bookData.description}}</p>
+                <p>{this.props.bookData.description}</p>
                 </div>
             </div>
         )
