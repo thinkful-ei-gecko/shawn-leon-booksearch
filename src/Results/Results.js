@@ -5,10 +5,12 @@ export default class Results extends Component {
     render() {
         return (
             <div>
+                {console.log(`Results Props: ${this.props.stateData}`)}
                 <ul>
-                    <Book></Book>
+                    {this.props.stateData.map((book, i) => <Book bookData={book} key={i}></Book>)}
                 </ul>
             </div>
         )
     }
 }
+

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SearchBar from './SearchBar/SearchBar';
 import FilterBar from './FilterBar/FilterBar';
 
 export default class Banner extends Component {
@@ -7,8 +6,7 @@ export default class Banner extends Component {
         return (
             <header>
                 <h1>Google Book Search</h1>
-                <SearchBar></SearchBar>
-                <FilterBar></FilterBar>
+                <FilterBar APIcall={this.props.APIcall}></FilterBar>
             </header>
         )
     }
